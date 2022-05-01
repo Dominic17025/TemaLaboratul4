@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <script>
+        function Numere() {
+            var vf = new Array(101).fill(0);
+            for (var i = 0; i < 20; i++) {
+                var num = Math.floor(Math.random() * 90) + 10;
+                if (vf[num] == 0) {
+                    console.log(num);
+                    vf[num]++
+                }
+            }
+
+        }
+        Numere();
+
+    </script>
+
+</body>
+
+</html>

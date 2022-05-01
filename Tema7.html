@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <input type="text" id="x">
+    <input type="text" id="y">
+    <input type="text" id="z">
+    <button onclick="gasestesemnul()">Afla</button>
+    
+    <script>
+        function gasestesemnul() {
+            var x = parseInt(document.getElementById("x").value);
+            var y = parseInt(document.getElementById("y").value);
+            var z = parseInt(document.getElementById("z").value);
+
+            var sum = x + y;
+            var mul = x * y;
+            var div = x / y;
+            var dif = x - y;
+
+            switch (z) {
+                case sum:
+                    console.log("x + y = z");
+                    break
+                case mul:
+                    console.log("x * y = z");
+                    break
+                case div:
+                    console.log("x / y = z");
+                    break
+                case dif:
+                    console.log("x - y = z");
+                    break
+            }
+
+        }
+
+    </script>
+
+
+</body>
+
+</html>

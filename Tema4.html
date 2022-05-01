@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+    <h1>Calcularea distantei.</h1>
+    <p>Introdu x.</p>
+    <input type="number" id="a" value="" />
+    <p>Introdu y.</p>
+    <input type="number" id="b" value="" />
+    <p>Introdu x1.</p>
+    <input type="number" id="c" value="" />
+    <p>Introdu y1.</p>
+    <input type="number" id="d" value="" />
+    <button onclick="distanta()">Calculeaza</button>
+    <p id="distanta"></p>
+    <script>
+        function distanta() {
+            var y = parseInt(document.getElementById('a').value);
+            var z = parseInt(document.getElementById('b').value);
+            var q = parseInt(document.getElementById('c').value);
+            var w = parseInt(document.getElementById('d').value);
+            var putereA = Math.pow(q - y, 2);
+            var putereB = Math.pow(w - z, 2);
+            var suma = putereA + putereB;
+            var distanta = Math.sqrt(suma);
+            document.getElementById("distanta").innerHTML = distanta;
+        }
+
+    </script>
+
+
+    </script>
+</body>
+
+</html>
